@@ -1,0 +1,318 @@
+/* my product image hover effect */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+body {
+  
+   font-family: 'poppins', san-serif;
+  
+}
+
+*{
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+.products-preview {
+
+   overflow-x: hidden;
+   
+}
+
+.title {
+   font-size: 3.5rem;
+   color: #444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.pro-container {
+
+   margin: 0 auto;
+
+}
+
+.pro-container .products-container {
+
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 1rem;
+}
+
+.description {
+   text-align: center;
+   background: #fff;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.pro-container .products-container .product:hover {
+   outline: .2rem solid #222;
+   outline-offset: 0;
+}
+
+.pro-container .products-container .product img {
+   height: 25rem;
+}
+
+.pro-container .products-container .product:hover img {
+   transform: scale(.9);
+}
+
+.pro-container .products-container .product h3 {
+   padding: .1rem 0;
+   font-size: 3rem;
+   color: #444;
+}
+
+.pro-container .products-container .product:hover h3 {
+   color: #27ae60;
+}
+
+.pro-container .products-container .product .price {
+   font-size: 3rem;
+   color: #444;
+}
+
+.products-preview {
+   position: fixed;
+   top: 0;
+   left: 0;
+   min-height: inherit;
+   width: 100%;
+   background: rgba(0, 0, 0, .8);
+   display: none;
+   transition: all 800ms ease;
+   animation: preview 600ms forwards;
+
+   
+}
+
+@keyframes preview {
+   10%{
+      transform: scale(10%);
+      left: -100%;
+   }
+
+      
+   20%{
+      transform: scale(20%);
+      left: -90%;
+   }
+   30%{
+      transform: scale(30%);
+      left: -80%;
+   }
+   40%{
+      transform: scale(40%);
+      left: -70%;
+   }
+   50%{
+      transform: scale(50%);
+      left: -60%;
+   }
+   60%{
+      transform: scale(60%);
+      left: -50%;
+   }
+   70%{
+      transform: scale(70%);
+      left: -40%;
+   }
+   80%{
+      transform: scale(80%);
+      left: -30%;
+   }
+   90%{
+      transform: scale(90%);
+      left: -20%;
+   }
+   100%{
+      transform: scale(100%);
+      left: 0;
+   }
+
+}
+
+.products-preview .preview {
+   display: none;
+   padding: 0.5rem;
+   text-align: center;
+   background: #fff;
+   position: relative;
+   margin: 1rem;
+   width: 100vw;
+   transition: all 800ms ease;
+   
+
+}
+
+.products-preview .preview.active {
+   display: inline-block;
+
+}
+
+.products-preview .preview .main img {
+   height: 33rem;
+   object-fit: contain;
+   width: 30rem;
+
+}
+.products-preview .preview .small-img img {
+   height: 100%;
+   object-fit: contain;
+   width: 100%;
+   
+
+}
+
+.border-active{
+   border: 1px solid ;
+}
+
+
+.produst-title{
+   font-size: 1.3rem;
+   color: #044c22;
+}
+
+.product-view{
+   
+   line-height: 2.5rem;
+}
+
+.products-preview .preview .fa-times {
+   position: absolute;
+   top: 1rem;
+   right: 1.5rem;
+   cursor: pointer;
+   color: #444;
+   font-size: 3rem;
+   z-index: 9;
+   
+}
+
+.products-preview .preview .fa-times:hover {
+   transform: rotate(90deg);
+}
+
+.products-preview .preview h3 {
+   color: #444;
+   padding: 0.5rem 0;
+   font-size: 2rem;
+}
+
+.products-preview .preview .stars {
+   padding: 0.5rem 0;
+   font-size: 1.2rem;
+}
+
+.products-preview .preview .stars i {
+   color: #27ae60;
+}
+
+.products-preview .preview .stars span {
+   color: #999;
+}
+
+.products-preview .preview p {
+   line-height: 1.5;
+   font-size: 1.4rem;
+   color: #777;
+}
+
+.products-preview .preview .price {
+   padding: 0.5rem 0;
+   font-size: 1.2rem;
+   color: #27ae60;
+}
+
+.products-preview .preview .original-price {
+   padding: 0.5rem 0;
+   font-size: 1.2rem;
+   color: #ae2727;
+}
+.products-preview .preview .save {
+   padding: 0.5rem 0;
+   font-size: 1.2rem;
+   background-color: #989d9a5f;
+   width: fit-content;
+   border-radius: 5px;
+   height: fit-content;
+}
+
+.amount{ 
+   position: absolute;
+ }
+ .amount::after{
+   content: "";
+   width: 100%;
+   height: 1px;
+   background: black;
+   position: absolute;
+   bottom: 50%;
+   left: 0;
+ } 
+
+ .stock{
+   padding: 0.3rem 0;
+   font-size: 0.9rem;
+   background-color: #00ed2b42;
+   width: fit-content;
+   border-radius: 5px;
+   height: fit-content;
+   color: #111;
+   font-weight: 600;
+ }
+
+ .extra-details{
+   font-size: 1.3rem;
+   color: blue;
+ }
+
+.products-preview .preview .buttons {
+   display: flex;
+   gap: 1.5rem;
+   flex-wrap: wrap;
+   margin-top: 1rem;
+}
+
+.products-preview .preview .buttons a {
+   flex: 1 1 16rem;
+   padding: 1rem;
+   font-size: 1.2rem;
+   color: #444;
+   border: .1rem solid #444;
+   
+}
+
+.products-preview .preview .buttons a.cart {
+   background: rgb(135, 130, 130);
+   color: #fff;
+}
+
+.products-preview .preview .buttons a.cart:hover {
+   background: #111;
+}
+
+.products-preview .preview .buttons a.buy:hover {
+   background: #444;
+   color: #fff;
+}
+
+.products-preview .preview .buttons a.favorite {
+   background: rgb(193, 240, 185);
+   color: rgb(38, 35, 35);
+}
+
+.products-preview .preview .buttons a.favorite:hover {
+   background: #111;
+   color: rgb(197, 186, 186);
+}
+
+/* my product image hover effect */

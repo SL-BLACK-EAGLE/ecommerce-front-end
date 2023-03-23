@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>New Tech | Products</title>
+
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+
+  <link rel="stylesheet" href="semantic/Semantic-UI-CSS-master/semantic.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body class="">
+
+
+  <!----top nav bar start---->
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <nav class="navbar navbar-expand-lg text-white bg-black p-1 ">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler btn btn-outline-light btn-close-white" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon btn btn-outline-light"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-start d-block d-lg-none" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-black">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NT ESHOPEX</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-block d-lg-none">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">NT ESHOPEX Home</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Trending</a>
+                <li>
+                  <hr class="table-group-divider">
+                </li>
+                <a class="nav-link" href="#">PC</a>
+                <a class="nav-link" href="#">Household</a>
+
+                <li>
+                  <hr class="table-group-divider">
+                </li>
+
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    See All
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">TV & Video</a></li>
+                    <li><a class="dropdown-item" href="#">Home Audio & Theater</a></li>
+                    <li><a class="dropdown-item" href="#">Camera, Photo & Video</a></li>
+                    <li><a class="dropdown-item" href="#">Cell Phone & Accessories</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-lg-1 ms-3 ms-lg-0 "><a class="navbar-brand text-white" href="#">NT ESHOPEX</a></div>
+
+          <div class="col d-block d-lg-none">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Hello, sign in</a>
+
+            <a class="nav-link text-sm-start d-inline-flex" href="#">
+              <h5 style="font-size: smaller; font-weight: 700;">Account & Lists &#9662;</h5>
+            </a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+
+
+          <div class="col-lg-1 d-none d-lg-block ms-3">
+            <a class="nav-link text-sm-center" style="font-size: small; font-weight: 500;" href="#">Deliver to</a>
+            <a class="nav-link text-sm-center" href="#">
+              <h5 style="font-size: medium; font-weight: 700;"><i class="fa fa-map-marker"></i> Colombo</h5>
+            </a>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <form class="col">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"><a href="" style="text-decoration: none;">All
+                    &#11206;</a></span>
+                <input type="text" class="form-control">
+                <span class="input-group-text bg-warning"><a href="" style="text-decoration: none;"><i
+                      class="fa fa-search" aria-hidden="true"></i></a></span>
+              </div>
+            </form>
+          </div>
+
+          <div class="col d-none d-lg-block ms-4">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Hello, sign in</a>
+
+            <a class="nav-link text-sm-start" href="#">
+              <h5 style="font-size: smaller; font-weight: 700;">Account & Lists &#9662;</h5>
+            </a>
+          </div>
+
+
+          <div class="col d-none d-lg-block ms-4">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Returns</a>
+            <a class="nav-link text-sm-start" href="#">
+              <h5 style="font-size: smaller; font-weight: 700;">& Orders</h5>
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block ms-3">
+            <a class="nav-link text-sm-start d-inline" style="font-size: x-large;" href="#"><i
+                class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <h5 class="d-inline" style="font-size: medium; font-weight: 500;"> Cart</h5>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+  </div>
+
+  <!----top nav bar end---->
+
+  <!----btm nav bar start---->
+
+  <nav class="navbar text-white bg-dark d-lg-block d-none p-1">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler btn btn-outline-light btn-close-white d-none d-lg-block" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar1" aria-controls="offcanvasNavbar1">
+        <span class="navbar-toggler-icon btn btn-outline-light"></span>
+      </button>
+
+
+
+      <div class="offcanvas offcanvas-start d-sm-none d-lg-block" tabindex="-1" id="offcanvasNavbar1"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header bg-black">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NT ESHOPEX</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-none d-lg-block ">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-5 position-absolute ms-5 d-flex">
+        <div class="row">
+
+
+
+
+          <div class="col-1 d-none d-lg-block ms-3">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 700; font-size: 90%;" href="#">All
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 500;" href="#">Today&nbsp;Deals
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 500;" href="#">Customer&nbsp;Service
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block ">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 500;" href="#">About&nbsp;Us
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 500;" href="#">Contact
+            </a>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </nav>
+
+
+  <nav class="navbar text-white bg-black d-block d-lg-none p-1">
+    <div class="container-fluid">
+
+      <div class="row ">
+        <div class="col-12 d-lg-none">
+          <div class="col d-inline-block">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Deals</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Home</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">PC</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Household</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Best Sellers</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">NT ESHOPEX
+              specials</a>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </nav>
+
+
+
+
+
+  <nav class="navbar text-white bg-dark d-block d-lg-none p-1">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="input-group">
+          <i class="fa fa-map-marker"></i>
+          <a class="nav-link text-sm-center" style="font-size: small; font-weight: 500;" href="#">&nbsp; Deliver
+            to</a>
+          <a class="nav-link text-sm-center" style="font-size: small; font-weight: 500;" href="#">&nbsp; Colombo</a>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </nav>
+
+
+  <!----btm nav bar end---->
+
+  <h1 class="title"> Electronic Products </h1>
+  <hr>
+  <!--Category name-->
+  <header class="col-12 mt-3 mb-4">
+    <h3 class="ui header" style="min-height: 55px;">
+      <i class="mobile icon"></i>
+      <div class="content">
+        <h3>Mobile Phones And Accossories.</h3>
+        <div class="sub header">
+          <h5>Browse our selection of the latest mobile phones and accessories.</h5>
+        </div>
+      </div>
+    </h3>
+  </header>
+
+  <main class="container-fluid">
+
+    <div class="pro-container">
+
+      <div class="products-container">
+
+
+        <div class="ui four doubling stackable cards">
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (1).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (2).png" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (3).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (4).png" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+
+
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (5).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (6).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (7).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (8).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (9).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (10).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (11).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (12).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+
+
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (12).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (14).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (15).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (16).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (17).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (18).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (19).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (20).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+
+
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (21).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (22).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (25).jpg" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="pink ui card product" data-name="p-1">
+            <div class="content">
+              <i class="right floated like icon"></i>
+              <i class="right floated star icon"></i>
+              <div class="header">Card Header</div>
+            </div>
+            <a class="image">
+              <img src="images/electronic items/image (24).png" alt="">
+            </a>
+
+
+            <div class="content description">
+              <div class="meta">Best choice</div>
+              <p class="description">L orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                at
+                malesuada
+                nunc. Proin laoreet, ligula
+                at congue volutpat, magna dui elementum leo, vel tincidunt purus lacus vel magna.</p>
+            </div>
+
+            <div class="extra content">
+              <div class="ui two buttons">
+                <button class="ui button positive"><i class="cart plus icon"></i> Add to Cart</button>
+                <button class="ui button"><i class="info circle icon"></i> More Info</button>
+              </div>
+              <div class="ui label">In Stock</div>
+              <div class="ui star rating" data-rating="4" data-max-rating="5"></div>
+            </div>
+            <div class="extra content">
+              <span class="left floated">
+                <i class="like icon"></i>Like
+              </span>
+              <span class="right floated">
+                <i class="star icon"></i>Favorite
+              </span>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="products-preview col-12">
+
+
+        <div class="preview" data-target="p-1">
+          <i class="fas fa-times"></i>
+
+          <div class="row">
+            <div class="col-6">
+              <div class="border p-2 main">
+                <img src="images/electronic items/pexels-photomix-company-1038628.jpg" alt="">
+              </div>
+
+              <div class="row mt-2 m-0">
+                <div class="border small-img p-2 col-12">
+                  <div class="row m-0 small-img">
+                    <div class="col-3 border-active m-0 p-1">
+                      <img src="images/electronic items/pexels-pixabay-416682.jpg" alt="">
+                    </div>
+                    <div class="col-3  m-0 p-1">
+                      <img src="images/electronic items/pexels-pixabay-416682.jpg" alt="">
+                    </div>
+                    <div class="col-3  m-0 p-1">
+                      <img src="images/electronic items/pexels-pixabay-416682.jpg" alt="">
+                    </div>
+                    <div class="col-3  m-0 p-1">
+                      <img src="images/electronic items/pexels-pixabay-416682.jpg" alt="">
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+            <div class="col">
+              <nav class="navbar navbar-expand-lg  bg-light">
+
+                <div>
+                  <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home /</a>
+                    <a class="nav-link disabled">Single product View</a>
+                  </div>
+                </div>
+
+              </nav>
+
+              <div class="container-fluid text-start product-view">
+
+                <div class="produst-title text-start">
+                  Mobile Phone Accossories
+                </div>
+
+                <div class="stars text-start mt-2">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>( 250 Reviews )</span>
+                </div>
+
+                <div class="row mt-3 m-0">
+                  <div class="col-2 price">175000.00</div>
+                  <div class="col-2 original-price"><span class="amount">194000.00</span></div>
+                  <div class="col-2 save"><span>Save 10%</span></div>
+                </div>
+
+                <div class="extra-details">
+                  <span>Warrenty: </span> <span>3 years</span>
+                </div>
+                <div class="extra-details">
+                  <span>Return: </span><span>Check the return policy</span>
+                </div>
+                <div class="extra-details">
+                  <span>Stock Availablility: </span><span class="stock"> In-Stock</span>
+                </div>
+
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, dolorem.</p>
+                <div class="row text-center">
+                  <div class="buttons col-4">
+                    <a href="#" class="buy">buy now</a>
+
+                  </div>
+                  <div class="buttons col-4">
+
+                    <a href="#" class="cart"><i class="fas fa-shopping-bag"></i> add to cart</a>
+
+                  </div>
+                  <div class="buttons col-4">
+
+                    <a href="#" class="favorite"><i class="fas fa-heart"></i> Favorite</a>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+  </main>
+
+
+
+
+  
+  <script src="bootstrap.bundle.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="script.js"></script>
+  <script src="popup.js"></script>
+  <script src="product_script.js"></script>
+</body>
+
+</html>

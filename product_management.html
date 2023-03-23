@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Manage</title>
+
+    <link rel="stylesheet" href="product_management.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+    <div class="container-fluid text-center body">
+        <div class="row">
+
+
+
+            <aside class="col-lg-2 col-md-2 col-5">
+                <div class="top">
+                    <div class="logo">
+                        <img src="images/profile-1.jpg" alt="">
+                        <h2>NT<span class="danger">SHOPEX</span></h2>
+                    </div>
+                    <button class="close bg-transparent" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </button>
+
+                </div>
+
+                <div class="sidebar nav-item p-0 col-12" style="z-index:3 ;">
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Dashboard</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Customers</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Orders</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">insights</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Analytics</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp m-0">mail_outline</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Messages</h3>
+                        <span class="message-count m-0">26</span>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">inventory</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Products</h3>
+                    </a>
+                    <a href="#" class="active nav-link align-items-center">
+                        <span class="material-icons-sharp">report_gmailerrorred</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Reports</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Settings</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">add</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Add product</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Logout</h3>
+                    </a>
+                </div>
+            </aside>
+
+
+
+            <div class="main col-lg-10 col-md-10 col">
+
+                <div class="row align-items-center d-flex d-inline-block ">
+
+                    <div class="col-8 col-md-8 col-lg-8 justify-content-start d-inline">
+
+                        <div class="row">
+                            <button id="menu-btn" class="bg-transparent menu-btn col-2 d-block d-md-none">
+                                <span class="material-icons-sharp">menu</span>
+                            </button>
+                            <h1 class="text-start col">Product Management</h1>
+                        </div>
+                    </div>
+
+                    <div class="theme-toggler col-2 col-md-2 col-lg-1 d-flex m-0 p-0 justify-content-center">
+                        <div class="align-items-center d-flex col">
+                            <span class="material-icons-sharp active bg">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="profile col-2 col-md-2 col-lg-3 d-inline-block align-items-center d-flex justify-content-end m-0 p-0">
+
+                        <div class="info col-8 text-end d-none d-lg-block">
+                            <p class="m-0">Hey, <b>Chathuranga</b></p>
+                            <small class="text_muted">Admin</small>
+                        </div>
+                        <div class="col justify-content-end d-flex align-items-center">
+                            <div class="profile-photo">
+                                <img src="images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="mb-3 justify-content-start d-flex col-4 col-lg-2">
+                        <div class="col-11 col-lg-10 date">
+                            <input type="date">
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="row">
+
+
+
+                    <div class="col-lg-12 col-md-12 col-12 p-0">
+
+                        <div class="row">
+
+                            <div class="conta"></div>
+
+                            <div class="col-12">
+                                <div class="list">
+
+                                    <div class="table">
+
+
+                                        <table class=" table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Product Name</th>
+                                                    <th>Serial Number </th>
+                                                    <th>Sell price</th>
+                                                    <th>Quantity</th>
+                                                    <th>stock Price</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                                <tr>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        Camera
+                                                    </td>
+                                                    <td>
+                                                        936-123-456
+                                                    </td>
+                                                    <td>
+                                                        175,000.00
+                                                    </td>
+                                                    <td>
+                                                        10
+                                                    </td>
+                                                    <td>
+                                                        172,000.00
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-sm btn-success"><i
+                                                                class="fas fa-edit"></i></button>
+                                                        <button class="btn btn-sm btn-danger"><i
+                                                                class="fas fa-trash"></i></button>
+                                                    </td>
+                                                </tr>
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <script src="script3.js"></script>
+    
+
+
+
+</body>
+
+</html>

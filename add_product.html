@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Tech | Add Product</title>
+
+    <link rel="stylesheet" href="add_product.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-utilities.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid text-center body">
+        <div class="row">
+
+
+
+            <aside class="col-lg-2 col-md-2 col-5">
+                <div class="top">
+                    <div class="logo">
+                        <img src="images/profile-1.jpg" alt="">
+                        <h2>NT<span class="danger">SHOPEX</span></h2>
+                    </div>
+                    <button class="close bg-transparent" id="close-btn">
+                        <span class="material-icons-sharp">close</span>
+                    </button>
+
+                </div>
+
+                <div class="sidebar nav-item p-0 col-12" style="z-index:3 ;">
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">grid_view</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Dashboard</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">person_outline</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Customers</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">receipt_long</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Orders</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">insights</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Analytics</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp m-0">mail_outline</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Messages</h3>
+                        <span class="message-count m-0">26</span>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">inventory</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Products</h3>
+                    </a>
+                    <a href="#" class="active nav-link align-items-center">
+                        <span class="material-icons-sharp">report_gmailerrorred</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Reports</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">settings</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Settings</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">add</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Add product</h3>
+                    </a>
+
+                    <a href="#" class="nav-link align-items-center">
+                        <span class="material-icons-sharp">logout</span>
+                        <h3 class="m-1 d-block d-md-none d-lg-block">Logout</h3>
+                    </a>
+                </div>
+            </aside>
+
+
+
+            <div class="main col-lg-10 col-md-10 col">
+
+                <div class="row align-items-center d-flex d-inline-block ">
+
+                    <div class="col-8 col-md-8 col-lg-8 justify-content-start d-inline">
+
+                        <div class="row">
+                            <button id="menu-btn" class="bg-transparent menu-btn col-2 d-block d-md-none">
+                                <span class="material-icons-sharp">menu</span>
+                            </button>
+                            <h1 class="text-start col">Add Product</h1>
+                        </div>
+                    </div>
+
+                    <div class="theme-toggler col-2 col-md-2 col-lg-1 d-flex m-0 p-0 justify-content-center">
+                        <div class="align-items-center d-flex col">
+                            <span class="material-icons-sharp active bg">light_mode</span>
+                            <span class="material-icons-sharp">dark_mode</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="profile col-2 col-md-2 col-lg-3 d-inline-block align-items-center d-flex justify-content-end m-0 p-0">
+
+                        <div class="info col-8 text-end d-none d-lg-block">
+                            <p class="m-0">Hey, <b>Chathuranga</b></p>
+                            <small class="text_muted">Admin</small>
+                        </div>
+                        <div class="col justify-content-end d-flex align-items-center">
+                            <div class="profile-photo">
+                                <img src="images/profile-1.jpg" alt="">
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+                <div class="row ">
+
+
+
+                    <div class="col-lg-12 col-md-12 col-12 p-0">
+
+                        <div class="row">
+
+
+
+                            <div class="col-12">
+                                <div class="product-list">
+
+                                    <form>
+                                        <div class="container mt-3">
+
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">PRODUCT ID</label>
+                                                    <input id="product_id" placeholder="PRODUCT ID" class="form-control"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">PRODUCT
+                                                        NAME</label>
+                                                    <input id="product_name" placeholder="PRODUCT NAME"
+                                                        class="form-control" type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">PRODUCT
+                                                        DESCRIPTION</label>
+                                                    <input placeholder="PRODUCT DESCRIPTION" class="form-control"
+                                                        type="text">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+
+                                                    <label class="form-label">PRODUCT
+                                                        CATEGORY</label>
+
+                                                    <select class="form-control">
+                                                        <option value="1">Select</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">AVAILABLE
+                                                        QUANTITY</label>
+
+                                                    <input placeholder="AVAILABLE QUANTITY" class="form-control"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">PRODUCT
+                                                        WEIGHT</label>
+
+                                                    <input placeholder="PRODUCT WEIGHT" class="form-control"
+                                                        type="text">
+
+
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">PRODUCT
+                                                        DESCRIPTION</label>
+
+                                                    <textarea class="form-control"></textarea>
+
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">PRODUCT
+                                                        DESCRIPTION</label>
+
+                                                    <textarea class="form-control"></textarea>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">PERCENTAGE
+                                                        DISCOUNT</label>
+
+                                                    <input placeholder="PERCENTAGE DISCOUNT" class="form-control"
+                                                        type="text">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">STOCK ALERT</label>
+
+                                                    <input placeholder="STOCK ALERT" class="form-control input-md"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">STOCK
+                                                        CRITICAL</label>
+
+                                                    <input placeholder="STOCK CRITICAL" class="form-control"
+                                                        type="search">
+
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">TUTORIAL</label>
+
+                                                    <input placeholder="TUTORIAL" class="form-control " type="search">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">TUTORIAL FR</label>
+
+                                                    <input placeholder="TUTORIAL FR" class="form-control "
+                                                        type="search">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">ONLINE DATE</label>
+
+                                                    <input id="online_date" name="online_date" placeholder="ONLINE DATE"
+                                                        class="form-control" type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">AUTHOR</label>
+
+                                                    <input placeholder="AUTHOR" class="form-control" type="text">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">ENABLE
+                                                        DISPLAY</label>
+
+                                                    <input placeholder="ENABLE DISPLAY" class="form-control"
+                                                        type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">COMMENT</label>
+
+                                                    <input placeholder="COMMENT" class="form-control" type="text">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">APPROUVED BY</label>
+
+                                                    <input placeholder="APPROUVED BY" class="form-control" type="text">
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">Main Image</label>
+
+                                                    <input class="form-label" type="file">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3">
+                                                    <label class="form-label">Other images</label>
+
+                                                    <input type="file">
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4 mt-3 ">
+                                                    <label class="form-label">Add product</label>
+
+                                                    <button class="btn btn-primary">Add</button>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+
+
+                                    </form>
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+    </div>
+
+    <script src=" script3.js"></script>
+    <script src="script4.js"></script>
+
+
+
+</body>
+
+</html>

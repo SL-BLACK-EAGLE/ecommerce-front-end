@@ -1,0 +1,22 @@
+.btn-bg {
+    background-color: rgba(77, 75, 79, 0.422);
+    height: 2.5rem;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+.side-separate {
+    width: 2px;
+    height: 2rem;
+    background-color: rgba(0, 0, 0, 0.51);
+
+}
+
+.search{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.523);
+}

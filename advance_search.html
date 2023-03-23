@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>New Tech | Advance Search</title>
+
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="advance_search.css">
+
+</head>
+
+<body class="">
+
+
+  <!----top nav bar start---->
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <nav class="navbar navbar-expand-lg text-white bg-black p-1 ">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler btn btn-outline-light btn-close-white" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon btn btn-outline-light"></span>
+          </button>
+
+          <div class="offcanvas offcanvas-start d-block d-lg-none" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header bg-black">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NT ESHOPEX</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body d-block d-lg-none">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">NT ESHOPEX Home</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Trending</a>
+                <li>
+                  <hr class="table-group-divider">
+                </li>
+                <a class="nav-link" href="#">PC</a>
+                <a class="nav-link" href="#">Household</a>
+
+                <li>
+                  <hr class="table-group-divider">
+                </li>
+
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    See All
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">TV & Video</a></li>
+                    <li><a class="dropdown-item" href="#">Home Audio & Theater</a></li>
+                    <li><a class="dropdown-item" href="#">Camera, Photo & Video</a></li>
+                    <li><a class="dropdown-item" href="#">Cell Phone & Accessories</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="col-6 col-lg-1 ms-3 ms-lg-0 "><a class="navbar-brand text-white" href="#">NT ESHOPEX</a></div>
+
+          <div class="col d-block d-lg-none">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Hello, sign in</a>
+
+            <a class="nav-link text-sm-start d-inline-flex" href="#">
+              <h5 style="font-size: smaller; font-weight: 700;">Account & Lists &#9662;</h5>
+            </a>
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </div>
+
+
+          <div class="col-lg-1 d-none d-lg-block ms-3">
+            <a class="nav-link text-sm-center" style="font-size: small; font-weight: 500;" href="#">Deliver to</a>
+            <a class="nav-link text-sm-center" href="#">
+              <h5 style="font-size: medium; font-weight: 700;"><i class="fa fa-map-marker"></i> Colombo</h5>
+            </a>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <form class="col">
+              <div class="input-group">
+                <span class="input-group-text" id="basic-addon1"><a href="" style="text-decoration: none;">All
+                    &#11206;</a></span>
+                <input type="text" class="form-control">
+                <span class="input-group-text bg-warning"><a href="" style="text-decoration: none;"><i
+                      class="fa fa-search" aria-hidden="true"></i></a></span>
+              </div>
+            </form>
+          </div>
+
+          <div class="col d-none d-lg-block ms-4">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Hello, sign in</a>
+
+            <a class="nav-link text-sm-start" href="#">
+              <h5 style="font-size: smaller; font-weight: 700;">Account & Lists &#9662;</h5>
+            </a>
+          </div>
+
+
+          <div class="col d-none d-lg-block ms-4">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Returns</a>
+            <a class="nav-link text-sm-start" href="#">
+              <h5 style="font-size: smaller; font-weight: 700;">& Orders</h5>
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block ms-3">
+            <a class="nav-link text-sm-start d-inline" style="font-size: x-large;" href="#"><i
+                class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <h5 class="d-inline" style="font-size: medium; font-weight: 500;"> Cart</h5>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+    </div>
+
+  </div>
+
+  <!----top nav bar end---->
+
+  <!----btm nav bar start---->
+
+  <nav class="navbar text-white bg-dark d-lg-block d-none p-1">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler btn btn-outline-light btn-close-white d-none d-lg-block" type="button"
+        data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar1" aria-controls="offcanvasNavbar1">
+        <span class="navbar-toggler-icon btn btn-outline-light"></span>
+      </button>
+
+
+
+      <div class="offcanvas offcanvas-start d-sm-none d-lg-block" tabindex="-1" id="offcanvasNavbar1"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header bg-black">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">NT ESHOPEX</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-none d-lg-block ">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="col-5 position-absolute ms-5 d-flex">
+        <div class="row">
+
+
+
+
+          <div class="col-1 d-none d-lg-block ms-3">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 700; font-size: 90%;" href="#">All
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 500;" href="#">Today&nbsp;Deals
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 500;" href="#">Customer&nbsp;Service
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block ">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 500;" href="#">About&nbsp;Us
+            </a>
+          </div>
+
+          <div class="col d-none d-lg-block">
+            <a class="nav-link text-center" style="font-size: small; font-weight: 500;" href="#">Contact
+            </a>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </nav>
+
+
+  <nav class="navbar text-white bg-black d-block d-lg-none p-1">
+    <div class="container-fluid">
+
+      <div class="row ">
+        <div class="col-12 d-lg-none">
+          <div class="col d-inline-block">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Deals</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Home</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">PC</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Household</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">Best Sellers</a>
+          </div>
+          <div class="col d-inline-block ms-3">
+            <a class="nav-link text-sm-start" style="font-size: small; font-weight: 500;" href="#">NT ESHOPEX
+              specials</a>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </nav>
+
+
+
+
+
+  <nav class="navbar text-white bg-dark d-block d-lg-none p-1">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="input-group">
+          <i class="fa fa-map-marker"></i>
+          <a class="nav-link text-sm-center" style="font-size: small; font-weight: 500;" href="#">&nbsp; Deliver
+            to</a>
+          <a class="nav-link text-sm-center" style="font-size: small; font-weight: 500;" href="#">&nbsp; Colombo</a>
+
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+  </nav>
+
+
+  <!----btm nav bar end---->
+
+  <div class="container-fluid">
+    <div class="row p-0 m-0">
+      <div class="col d-flex justify-content-center mt-2">
+        <h1 class="m-0">ADVANCE SEARCH</h1>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+  <div class="container-fluid ">
+
+    <div class="row bg-light p-1">
+      
+      
+      <div class="col">
+        <form class="col">
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon1"><a href="" style="text-decoration: none;">Select Product
+                &#11206;</a></span>
+            <input type="text" class="form-control" placeholder="or search here">
+            <span class="input-group-text bg-warning"><a href="" style="text-decoration: none;"><i
+                  class="fa fa-search" aria-hidden="true"></i></a></span>
+          </div>
+        </form>
+      </div>
+    
+    </div>
+    
+    <div class="row mt-1 bg-light p-1">
+      <div class="col justify-content-center d-flex">
+        <select class="form-select" name="" id="">
+          <option value="1">Select Category</option>
+        </select>
+      </div>
+      <div class="col justify-content-center d-flex">
+        <select class="form-select" name="" id="">
+          <option value="1">Select Brand</option>
+        </select>
+      </div>
+      <div class="col justify-content-center d-flex">
+        <select class="form-select" name="" id="">
+          <option value="1">Select Model</option>
+        </select>
+      </div>
+      <div class="col justify-content-center d-flex">
+        <select class="form-select" name="" id="">
+          <option value="1">Select Type</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mt-1 bg-light p-1">
+      <div class="col justify-content-center d-flex">
+        <select class="form-select" name="" id="">
+          <option value="1">Select Condition</option>
+        </select>
+      </div>
+      <div class="col justify-content-center d-flex">
+        <select class="form-select" name="" id="">
+          <option value="1">Select Color</option>
+        </select>
+      </div>
+      <div class="col justify-content-center d-flex">
+        <input class="form-control" type="text" placeholder="min price">
+      </div>
+      <div class="col justify-content-center d-flex">
+        <input class="form-control" type="text" placeholder="max price">
+      </div>
+    </div>
+
+
+    <div class="row mt-1">
+     <div class="justify-content-end d-flex bg-light">
+       <div class="col-2 justify-content-center d-flex">
+        <select class="form-select" name="" id="">
+          <option value="1">Sort By</option>
+        </select>
+      </div>
+     </div>
+     
+    </div>
+
+    <div class="row mt-1">
+      <div class="justify-content-end d-flex bg-white p-">
+        <div class="col justify-content-center align-items-center search d-flex bg-white border border-3 rounded-3" style="height: 44vh;">
+          There are no products for your search
+       </div>
+      </div>
+      
+     </div>
+
+  </div>
+
+
+
+
+
+  <script src="bootstrap.bundle.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.js"></script>
+  <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  
+    place-items: center;
+
+}
+
+.centerbtn {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.outerbtn {
+    position: relative;
+    margin: 0 50px;
+    background: #111;
+}
+
+.buttonbtn {
+    height: 70px;
+    width: 220px;
+    border-radius: 50px;
+}
+
+.circlebtn {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.outerbtn button,
+.outerbtn span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.outerbtn span {
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+
+.buttonbtn span {
+    border-radius: 50px;
+}
+
+.circlebtn span {
+    border-radius: 50%;
+}
+
+.outerbtn button {
+    background: #111;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.buttonbtn button {
+    height: 60px;
+    width: 210px;
+    border-radius: 50px;
+}
+
+.circlebtn button {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.outerbtn:hover span:nth-child(1) {
+    filter: blur(7px);
+}
+
+.outerbtn:hover span:nth-child(2) {
+    filter: blur(14px);
+}
+
+.outerbtn:hover {
+    background: linear-gradient(#14ffe9, #ffeb3b, #ff00e0);
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+@media (max-width: 2040px) {
+    .centerbtn {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .outerbtn {
+        margin: 10px 0px;
+    }
+}
+
+
+

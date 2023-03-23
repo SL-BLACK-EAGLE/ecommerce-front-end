@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tech | Invoice</title>
+
+  <link rel="stylesheet" href="invoice.css">
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+
+
+</head>
+
+<body>
+  <div class="container-fluid text-center body">
+    <div class="row">
+
+
+
+      <aside class="col-lg-2 col-md-2 col-5">
+        <div class="top">
+          <div class="logo">
+            <img src="images/profile-1.jpg" alt="">
+            <h2>NT<span class="danger">SHOPEX</span></h2>
+          </div>
+          <button class="close bg-transparent" id="close-btn">
+            <span class="material-icons-sharp">close</span>
+          </button>
+
+        </div>
+
+        <div class="sidebar nav-item p-0 col-12" style="z-index:3 ;">
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp">grid_view</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Dashboard</h3>
+          </a>
+
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp">person_outline</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Customers</h3>
+          </a>
+
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp">receipt_long</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Orders</h3>
+          </a>
+
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp">insights</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Analytics</h3>
+          </a>
+
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp m-0">mail_outline</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Messages</h3>
+            <span class="message-count m-0">26</span>
+          </a>
+
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp">inventory</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Products</h3>
+          </a>
+          <a href="#" class="active nav-link align-items-center">
+            <span class="material-icons-sharp">report_gmailerrorred</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Reports</h3>
+          </a>
+
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp">settings</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Settings</h3>
+          </a>
+
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp">add</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Add product</h3>
+          </a>
+
+          <a href="#" class="nav-link align-items-center">
+            <span class="material-icons-sharp">logout</span>
+            <h3 class="m-1 d-block d-md-none d-lg-block">Logout</h3>
+          </a>
+        </div>
+      </aside>
+
+
+
+      <div class="main col-lg-10 col-md-10 col">
+
+        <div class="row align-items-center d-flex d-inline-block ">
+
+          <div class="col-8 col-md-8 col-lg-8 justify-content-start d-inline">
+
+            <div class="row">
+              <button id="menu-btn" class="bg-transparent menu-btn col-2 d-block d-md-none">
+                <span class="material-icons-sharp">menu</span>
+              </button>
+              <h1 class="text-start col">Invoice</h1>
+            </div>
+          </div>
+
+          <div class="theme-toggler col-2 col-md-2 col-lg-1 d-flex m-0 p-0 justify-content-center">
+            <div class="align-items-center d-flex col">
+              <span class="material-icons-sharp active bg">light_mode</span>
+              <span class="material-icons-sharp">dark_mode</span>
+            </div>
+          </div>
+
+          <div
+            class="profile col-2 col-md-2 col-lg-3 d-inline-block align-items-center d-flex justify-content-end m-0 p-0">
+
+            <div class="info col-8 text-end d-none d-lg-block">
+              <p class="m-0">Hey, <b>Chathuranga</b></p>
+              <small class="text_muted">Admin</small>
+            </div>
+            <div class="col justify-content-end d-flex align-items-center">
+              <div class="profile-photo">
+                <img src="images/profile-1.jpg" alt="">
+              </div>
+            </div>
+
+
+          </div>
+          <div class=" justify-content-start d-flex col-4 col-lg-2">
+            <div class="col-11 col-lg-10 date">
+              <input type="date">
+            </div>
+          </div>
+
+
+        </div>
+
+
+        <div class="row ">
+
+
+
+          <div class="col-lg-9 col-md-12 col-12 p-0">
+
+            <div class="row">
+
+              <div class="col-6 col-md-4 col-lg-4">
+                <div class="from">
+                  <p>From</p>
+                  <h5>NT Eshop EX, plc.</h3>
+                    <p>No 200, Gampaha,</p>
+                    <p>Sri Lanka</p>
+                    <p>Phone: (804) 123-5432</p>
+                    <p>Email: info@nteshopex.com</p>
+
+                </div>
+              </div>
+
+              <div class="col-6 col-md-4 col-lg-4">
+                <div class="to">
+                  <p>To</p>
+                  <h5>John Doe</h5>
+                  <p>795 Folsom Ave, Suite 600</p>
+                  <p>San Francisco, CA 94107</p>
+                  <p>Phone: (555) 539-1037</p>
+                  <p>Email: john.doe@example.com</p>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-4 col-lg-4 ">
+                <div class="order-details">
+                  <p>Date: 1/13/2023</p>
+                  <h5>Date: <span>1/13/2023</span></h5>
+                  <h5>Invoice #0078123</h5>
+                  <h5>Order ID: <span>4F3S8J</span></h5>
+                  <h5>Payment Due: <span>1/14/2023</span></h5>
+                  <h5>Account: <span>968-34567</span></h5>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="product-list">
+                  <h2>Item List</h2>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Qty</th>
+                        <th>Product</th>
+                        <th>Serial#</th>
+                        <th>Description</th>
+                        <th>Subtotal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Call of Duty</td>
+                        <td>455-981-221</td>
+                        <td>El snort testosterone trophy </td>
+                        <td>$64.50</td>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>Call of Duty</td>
+                        <td>455-981-221</td>
+                        <td>El snort testosterone trophy </td>
+                        <td>$64.50</td>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>Call of Duty</td>
+                        <td>455-981-221</td>
+                        <td>El snort testosterone trophy </td>
+                        <td>$64.50</td>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>Call of Duty</td>
+                        <td>455-981-221</td>
+                        <td>El snort testosterone trophy </td>
+                        <td>$64.50</td>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>Call of Duty</td>
+                        <td>455-981-221</td>
+                        <td>El snort testosterone trophy </td>
+                        <td>$64.50</td>
+                      </tr>
+
+                      <tr>
+                        <td>1</td>
+                        <td>Call of Duty</td>
+                        <td>455-981-221</td>
+                        <td>El snort testosterone trophy </td>
+                        <td>$64.50</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="row m-0 p-0 mt-3">
+                <div class="col-12 col-md-8 m-0 p-">
+                  <div class="payment">
+
+                    <span>Payement Methods:</span>
+                    <div class="icon"> <span class="material-icons-sharp">
+                        credit_card
+                      </span>
+                      <span class="material-icons-sharp">
+                        account_balance
+                      </span>
+                      <span class="material-icons-sharp">
+                        currency_bitcoin
+                      </span>
+                      <span class="material-icons-sharp">
+                        contactless
+                      </span>
+                    </div>
+
+
+                    <p>Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,
+                      weebly ning heekya handango imeem plugg dopplr jibjab,
+                      movity jajah plickers sifteo edmodo ifttt zimbra.</p>
+
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 method">
+                  <span>Amount Due 1/14/2023</span>
+                  <table>
+
+                    <tbody>
+                      <tr>
+                        <td><span>Subtotal:</span> </td>
+                        <td>$250.30</td>
+                      </tr>
+
+                      <tr>
+                        <td><span>Tax (9.3%):</span></td>
+                        <td>$10.34</td>
+                      </tr>
+                      <tr>
+                        <td><span>Shipping</span></td>
+                        <td>$5.80</td>
+                      </tr>
+
+                      <tr>
+                        <td><span>Total</span></td>
+                        <td>$265.24</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-12 col-12 m-0 p-0 extra-buttons ">
+            <div class="row p-0 m-0">
+              <div class="col-6 col-md-4 col-lg-12">
+                <div class="item pdf">
+                  <div>
+                    <span class="material-icons-sharp">picture_as_pdf</span>
+                    <h5>Genarate PDF</h5>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-12">
+                <div class="item send">
+                  <div>
+                    <span class="material-icons-sharp">send</span>
+                    <h5>Send Invoice</h5>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-4 col-lg-12">
+                <div class="item print">
+                  <div>
+                    <span class="material-icons-sharp">print</span>
+                    <h5>Print Invoice</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+
+</html>
